@@ -148,6 +148,8 @@ MarioBoard.prototype.play = function() {
       case KEY_RIGHT:
         this.direction = 'RIGHT';
         break;
+      default:
+        return;
     }
 
     clearTimeout(this.timeOut);
