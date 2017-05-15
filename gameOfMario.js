@@ -159,7 +159,7 @@ MarioBoard.prototype.play = function() {
 
 var initializeGame = function() {
   var boardSize = parseInt(prompt('Enter board size', 10));
-  window.marioBoard = new MarioBoard(boardSize);
+  var marioBoard = new MarioBoard(boardSize);
   marioBoard.createBoard();
   marioBoard.play();
 }
